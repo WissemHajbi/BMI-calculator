@@ -1,5 +1,16 @@
+@use "@material/checkbox";
+@use "@material/form-field";
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
 body {
   margin: 0;
+  display: grid;
+  justify-content: center;
+  align-content:center;
+  padding: 70px;
+  background-color: pink;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +22,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* styling the calculator */
+
+/* .calculator--div {
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input{
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 1rem;
+  flex: 1 0 33%;
+
+}
+
+input:focus{
+  outline: none;
+  border-color: blueviolet;
+}
+
+input, .placeholder-text{
+  font-size: 1.4rem;
+  padding: 0 1.2rem;
+} */
